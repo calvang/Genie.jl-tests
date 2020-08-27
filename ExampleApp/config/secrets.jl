@@ -1,1 +1,0 @@
-const SECRET_TOKEN = "4ee571cdc2d7c84b8271f763a73cf56b95bc1b8622cba5c3b7f2f729e8fe8109" 
