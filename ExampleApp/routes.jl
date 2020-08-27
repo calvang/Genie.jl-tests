@@ -1,4 +1,4 @@
-using Genie.Router
+using Genie.Router, Genie.Renderer, Genie.Renderer.Html
 
 route("/") do
   serve_static_file("welcome.html")
@@ -9,5 +9,13 @@ route("/error500") do
 end
 
 route("/error404") do
-  error_404("the page you want")
+    error_404("the page you want")
+end
+
+route("/api/hello.txt") do
+    respond("Hello, welcome to genie!", :text)
+end
+
+route("/api/hello.html") do
+    html("Hello World")
 end
