@@ -9,3 +9,7 @@ I had trouble installing Genie in the default Julia environment on my machine, b
 To set up a new Julia environment, go to the project directory and activate the Julia REPL command prompt. Then, type `]` to use the REPL interface for Pkg. You can create a new environment by typing `activate .`, and the typing `activate` will bring you back to the default environment.
 
 Once you successfully create a new environment, the Genie install should work by just typing `add Genie`. You can check that it has been successfully installed  by using the `st` command.
+
+You can also use a pre-built template for Genie, which is what I used for the `/ExampleApp` project, by running:
+
+`Genie.newapp_webservice("<appname>")`
